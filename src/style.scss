@@ -1,0 +1,9 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=K2D');
+@import "~bulmaswatch/darkly/variables";
+
+$bulmaswatch-import-font: false;
+$family-sans-serif: "K2D", sans-serif;
+
+@import "~bulma";
+@import "~bulmaswatch/darkly/overrides"
