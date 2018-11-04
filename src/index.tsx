@@ -1,3 +1,8 @@
 import "./style.scss";
+import * as React from "react";
+import * as ReactDOM from "react-dom";
 
-console.log("starting...");
+ReactDOM.render(
+    <div><h1>Jase Kirby Resume</h1></div>,
+    document.getElementById("root")
+);

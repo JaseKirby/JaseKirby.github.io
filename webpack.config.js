@@ -1,30 +1,24 @@
-const path = require("path");
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const outputPath = "dist";
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const outputPath = 'dist';
 
 module.exports = {
   entry: {
-    app: './src/index.tsx',
-    vendor: ['react', 'react-dom']
+    app: './src/index.tsx'
   },
-  mode: "development",
   output: {
     path: path.resolve(__dirname, outputPath),
     filename: "[name].bundle.js"
-  },
-  devtool: "inline-source-map",
-  devServer: {
-    contentBase: "./" + outputPath
   },
   module: {
     rules: [
       {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: ["css-loader", "sass-loader"]
+          fallback: 'style-loader',
+          use: ['css-loader', 'sass-loader']
         })
       },
       {
@@ -51,7 +45,7 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(outputPath),
-    new ExtractTextPlugin("style.css"),
+    new ExtractTextPlugin('style.css'),
     new HtmlWebpackPlugin({
       favicon: 'favicon.ico',
       template: 'index.html'
