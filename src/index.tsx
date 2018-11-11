@@ -2,7 +2,11 @@ import "./style.scss";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
+import data from "../jaseresume";
+import {HomePage} from "./pages/homePage";
+
+console.log(data.firstName);
 ReactDOM.render(
-    <div><h1>Jase Kirby Resume</h1></div>,
+    <HomePage resume={data} />,
     document.getElementById("root")
 );
