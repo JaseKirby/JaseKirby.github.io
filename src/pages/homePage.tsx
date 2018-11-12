@@ -13,7 +13,7 @@ class HomePageState {
 }
 
 const homePageStyle: any = {
-    marginTop: "70px"
+    paddingTop: "70px"
 };
 
 export class HomePage extends React.Component<IHomePageProps> {
@@ -28,7 +28,9 @@ export class HomePage extends React.Component<IHomePageProps> {
                         occupation={this.props.resume.occupation}
                         contactInfo={this.props.resume.contactInfo}/>
                     <div id="summary">
-                        {/* <p>summary here</p> */}
+                        <h2 className="title is-2">Summary</h2>
+                        <hr/>
+                        <p className="content is-size-5">{this.props.resume.summary}</p>
                     </div>
                 </div>
             </div>

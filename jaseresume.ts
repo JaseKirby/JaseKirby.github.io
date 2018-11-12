@@ -9,8 +9,8 @@ const r: Resume = {
     },
     summary: `
     Hard working software developer.
-    I absoulutely love writing code to create beautiful, functional, and responsive applications.
-    I am also a decent mechanic and an avid outdoorsman.
+    I love writing code and creating beautiful, functional, and responsive applications.
+    I am also a decent mechanic and an outdoorsman.
     `,
     education: [
         {
