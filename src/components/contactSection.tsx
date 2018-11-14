@@ -21,11 +21,36 @@ export class ContactSection extends React.Component<IContactSectionProps> {
                 {this.props.occupation.toUpperCase()}
             </h4>
             <div className="columns has-text-centered">
-                <div className="column">
-                    <h5 className="title is-5">
-                        {this.props.contactInfo.currentLocation}
-                    </h5>
-                </div>
+                {this.props.contactInfo.email &&
+                    <div className="column">
+                        <h5 className="title is-5">
+                            <span className="icon">
+                                <i className="fas fa-envelope"></i>
+                            </span>
+                            {this.props.contactInfo.email}
+                        </h5>
+                    </div>
+                }
+                {this.props.contactInfo.phone &&
+                    <div className="column">
+                        <h5 className="title is-5">
+                            <span className="icon">
+                                <i className="fas fa-mobile"></i>
+                            </span>
+                            {this.props.contactInfo.phone}
+                        </h5>
+                    </div>
+                }
+                {this.props.contactInfo.currentLocation &&
+                    <div className="column">
+                        <h5 className="title is-5">
+                            <span className="icon">
+                                <i className="fas fa-map-marker-alt"></i>
+                            </span>
+                            {this.props.contactInfo.currentLocation}
+                        </h5>
+                    </div>
+                }
             </div>
         </div>);
     }

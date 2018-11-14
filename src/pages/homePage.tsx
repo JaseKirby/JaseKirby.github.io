@@ -13,7 +13,7 @@ class HomePageState {
 }
 
 const homePageStyle: any = {
-    paddingTop: "70px"
+    marginTop: "70px"
 };
 
 export class HomePage extends React.Component<IHomePageProps> {
@@ -21,12 +21,11 @@ export class HomePage extends React.Component<IHomePageProps> {
         return(
             <div>
                 <NavBar resume={this.props.resume} />
-                <div className="container" style={homePageStyle}>
-                    <ContactSection
-                        id="contact" firstName={this.props.resume.firstName}
+                <div className="container">
+                    <ContactSection id="contact" firstName={this.props.resume.firstName}
                         lastName={this.props.resume.lastName}
                         occupation={this.props.resume.occupation}
-                        contactInfo={this.props.resume.contactInfo}/>
+                        contactInfo={this.props.resume.contactInfo} />
                     <div id="summary">
                         <h2 className="title is-2">Summary</h2>
                         <hr/>
