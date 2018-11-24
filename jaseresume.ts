@@ -1,4 +1,5 @@
 import { Resume } from "./src/models/resume";
+import { SkillLevel } from "./src/models/skillLevel";
 
 const r: Resume = {
     firstName: "Jase",
@@ -55,32 +56,32 @@ const r: Resume = {
         }
     ],
     skills: [
-        {title: "Linux"},
-        {title: "Windows"},
-        {title: "HTML"},
-        {title: "Javascript"},
-        {title: "CSS"},
-        {title: "Typescript"},
-        {title: "SQL"},
-        {title: "DevOps"},
-        {title: "Docker"},
-        {title: "Kubernetes"},
-        {title: "Openshift"},
-        {title: "Ansible"},
-        {title: "Java"},
-        {title: "C#"},
-        {title: "Jenkins"},
-        {title: "Elasticsearch"},
-        {title: "Fluentd"},
-        {title: "Web Applications"},
-        {title: "Node.js"},
-        {title: "NoSQL"},
-        {title: "Go"},
-        {title: "React"},
-        {title: "Groovy"},
-        {title: "ASP.NET Core"},
-        {title: "Tomcat"},
-        {title: "Spring Boot"}
+        {title: "Linux", level: SkillLevel.Advanced},
+        {title: "Windows", level: SkillLevel.Advanced},
+        {title: "HTML", level: SkillLevel.Advanced},
+        {title: "Javascript", level: SkillLevel.Intermediate},
+        {title: "CSS", level: SkillLevel.Beginner},
+        {title: "Typescript", level: SkillLevel.Intermediate},
+        {title: "SQL", level: SkillLevel.Intermediate},
+        {title: "DevOps", level: SkillLevel.Expert},
+        {title: "Docker", level: SkillLevel.Expert},
+        {title: "Kubernetes", level: SkillLevel.Advanced},
+        {title: "Openshift", level: SkillLevel.Advanced},
+        {title: "Ansible", level: SkillLevel.Advanced},
+        {title: "Java", level: SkillLevel.Advanced},
+        {title: "C#", level: SkillLevel.Advanced},
+        {title: "Jenkins", level: SkillLevel.Advanced},
+        {title: "Elasticsearch", level: SkillLevel.Intermediate},
+        {title: "Fluentd", level: SkillLevel.Intermediate},
+        {title: "Web Applications", level: SkillLevel.Advanced},
+        {title: "Node.js", level: SkillLevel.Intermediate},
+        {title: "NoSQL", level: SkillLevel.Intermediate},
+        {title: "Go", level: SkillLevel.Beginner},
+        {title: "React", level: SkillLevel.Intermediate},
+        {title: "Groovy", level: SkillLevel.Intermediate},
+        {title: "ASP.NET Core", level: SkillLevel.Advanced},
+        {title: "Tomcat", level: SkillLevel.Intermediate},
+        {title: "Spring Boot", level: SkillLevel.Intermediate}
     ]
 };
 

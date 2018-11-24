@@ -48,11 +48,23 @@ export class NavBar extends React.PureComponent<INavBarProps, NavBarState> {
                 </div>
                 <div id="navbarBasicExample" className={navBarMenuClass}>
                     <div className="navbar-end">
+                        <a className="navbar-item" href="#home">
+                            Home
+                        </a>
                         <a className="navbar-item" href="#summary">
                             Summary
                         </a>
                         <a className="navbar-item" href="#education">
                             Education
+                        </a>
+                        <a className="navbar-item" href="#internship">
+                            Internship
+                        </a>
+                        <a className="navbar-item" href="#employment">
+                            Employment
+                        </a>
+                        <a className="navbar-item" href="#skills">
+                            Skills
                         </a>
                     </div>
                 </div>
