@@ -11,7 +11,6 @@
     "@types/node": "^10.11.7",
     "bulma": "^0.7.2",
     "bulmaswatch": "^0.7.2",
-    "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^2.0.0",

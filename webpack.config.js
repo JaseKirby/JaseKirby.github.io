@@ -1,8 +1,7 @@
 const path = require("path");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const outputPath = "docs";
+const outputPath = ".";
 
 module.exports = {
   entry: {
@@ -44,11 +43,10 @@ module.exports = {
     extensions: [".tsx", ".ts", ".js"]
   },
   plugins: [
-    new CleanWebpackPlugin(outputPath),
     new ExtractTextPlugin("style.css"),
     new HtmlWebpackPlugin({
       favicon: "favicon.ico",
-      template: "index.html"
+      template: "index.template.html"
     })
   ]
 };
