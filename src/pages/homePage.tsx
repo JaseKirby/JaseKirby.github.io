@@ -14,7 +14,7 @@ class HomePageState {
 }
 
 const homePageStyle: any = {
-    marginTop: "70px"
+    marginTop: "40px"
 };
 
 const skillStyle: any = {
@@ -26,7 +26,7 @@ export class HomePage extends React.Component<IHomePageProps> {
         return(
             <div>
                 <NavBar resume={this.props.resume} />
-                <div className="container">
+                <div className="container" style={homePageStyle}>
                     <ContactSection id="home" firstName={this.props.resume.firstName}
                         lastName={this.props.resume.lastName}
                         occupation={this.props.resume.occupation}
