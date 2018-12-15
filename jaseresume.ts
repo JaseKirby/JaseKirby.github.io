@@ -4,12 +4,12 @@ import { SkillLevel } from "./src/models/skillLevel";
 const r: Resume = {
     firstName: "Jase",
     lastName: "Kirby",
-    occupation: "Software Developer",
+    occupation: "Software/DevOps Engineer",
     contactInfo: {
         currentLocation: "Timonium, MD"
     },
     summary: `
-    Hard working software developer.
+    Hard working software/DevOps engineer.
     I love writing code and creating beautiful, functional, and responsive applications.
     I am also a decent mechanic and an outdoorsman.
     `,
@@ -32,13 +32,13 @@ const r: Resume = {
     employment: [
         {
             employer: "UPS Information Services",
-            title: "Applications Developer",
+            title: "Applications Developer for UPS.com",
             location: "Timonium, MD",
             time: "January 2017-Present"
         },
         {
             employer: "UPS Information Services",
-            title: "Applications Developer",
+            title: "Technology Support Associate (Third Level Support for UPS.com)",
             location: "Timonium, MD",
             time: "December 2015-2016"
         },
