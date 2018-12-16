@@ -5,6 +5,7 @@ const r: Resume = {
     firstName: "Jase",
     lastName: "Kirby",
     occupation: "Software/DevOps Engineer",
+    githubLink: "github.com/jasekirby",
     contactInfo: {
         currentLocation: "Timonium, MD"
     },

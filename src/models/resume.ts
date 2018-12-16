@@ -8,6 +8,7 @@ export class Resume {
     firstName?: string;
     lastName?: string;
     occupation?: string;
+    githubLink?: string;
     contactInfo?: ContactInfo;
     summary?: string;
     education?: Education[];

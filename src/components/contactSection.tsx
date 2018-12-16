@@ -6,6 +6,7 @@ interface IContactSectionProps {
     firstName: string;
     lastName: string;
     occupation: string;
+    githubLink: string;
     contactInfo: ContactInfo;
 }
 
@@ -21,6 +22,18 @@ export class ContactSection extends React.Component<IContactSectionProps> {
                 {this.props.occupation.toUpperCase()}
             </h4>
             <div className="columns has-text-centered">
+                {this.props.githubLink &&
+                    <div className="column">
+                        <a href={"https://" + this.props.githubLink} target="_blank">
+                            <h5 className="title is-5">
+                                <span className="icon">
+                                    <i className="fab fa-github"></i>
+                                </span>
+                                {this.props.githubLink}
+                            </h5>
+                        </a>
+                    </div>
+                }
                 {this.props.contactInfo.email &&
                     <div className="column">
                         <h5 className="title is-5">

@@ -30,6 +30,7 @@ export class HomePage extends React.Component<IHomePageProps> {
                     <ContactSection id="home" firstName={this.props.resume.firstName}
                         lastName={this.props.resume.lastName}
                         occupation={this.props.resume.occupation}
+                        githubLink={this.props.resume.githubLink}
                         contactInfo={this.props.resume.contactInfo} />
                     <div id="summary">
                         <h2 className="title is-2">Summary</h2>
