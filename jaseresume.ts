@@ -32,10 +32,16 @@ const r: Resume = {
     ],
     employment: [
         {
+            employer: "Blackboard",
+            title: "DevOps Engineer",
+            location: "Baltimore, MD",
+            time: "April 2019 - Present"
+        },
+        {
             employer: "UPS Information Services",
             title: "Applications Developer for UPS.com",
             location: "Timonium, MD",
-            time: "January 2017-Present"
+            time: "January 2017 - April 2019"
         },
         {
             employer: "UPS Information Services",
@@ -69,6 +75,8 @@ const r: Resume = {
         {title: "Kubernetes", level: SkillLevel.Advanced},
         {title: "Openshift", level: SkillLevel.Advanced},
         {title: "Ansible", level: SkillLevel.Advanced},
+        {title: "Terraform", level: SkillLevel.Beginner},
+        {title: "AWS", level: SkillLevel.Intermediate},
         {title: "Java", level: SkillLevel.Advanced},
         {title: "C#", level: SkillLevel.Advanced},
         {title: "Jenkins", level: SkillLevel.Advanced},
